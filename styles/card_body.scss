@@ -1,0 +1,155 @@
+.price-tables {
+  display: flex;
+  min-width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: $background-color-darck-gray;
+
+  &__card-container {
+    display: flex;
+    justify-content: space-between;
+    min-width: 1176px;
+  }
+}
+
+.price-card {
+  position: relative;
+  overflow: hidden;
+  max-width: 380px;
+  height: 770px;
+  background-color: $background-color-medium-gray;
+
+  .price__card-special-item {
+    height: 25px;
+    width: 147px;
+    position: absolute;
+    top: 30px;
+    right: -30px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+    transform: rotate(45deg);
+    background-color: $background-color-medium-red;
+  }
+
+  &__price_basic {
+    background-color: $background-color-medium-grean;
+  }
+  &__price_businnes {
+    background-color: $background-color-medium-blue;
+  }
+
+  &__price_webshop {
+    background-color: $background-color-medium-orange;
+  }
+
+  &__title {
+    margin: 0;
+    margin-top: 33px;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 43px;
+    text-align: center;
+  }
+
+  &__subtitle {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  &__subtitle {
+    margin: 0;
+  }
+
+  &__price {
+    display: flex;
+    height: 105px;
+    margin-top: 33px;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 67px;
+
+    text-align: center;
+  }
+
+  &__price-value {
+    margin: auto;
+  }
+
+  &__description {
+    margin: 40px 26px 40px 26px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+  }
+
+  &__description_bold {
+    font-weight: 400;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__list-item {
+    line-height: 50px;
+
+    &:nth-child(odd) {
+      background-color: rgba(42, 52, 56, 0.5);
+    }
+  }
+
+  &__list-icon {
+    height: 13px;
+    width: 15px;
+    margin: 0 19px 0 22px;
+    display: inline-block;
+  }
+
+  &__list-icon_basic {
+    background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png);
+  }
+  &__list-icon_business {
+    background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png);
+  }
+  &__list-icon_webshop {
+    background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png);
+  }
+
+  &__list-text {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  &__btn {
+    height: 40px;
+    width: 154px;
+    margin: 39px 0 0 112px;
+    border-radius: 20px;
+    border: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $text-color-white;
+  }
+
+  &__btn_basic {
+    background-color: $background-color-medium-grean;
+  }
+
+  &__btn_business {
+    background-color: $background-color-medium-blue;
+  }
+
+  &__btn_webshop {
+    background-color: $background-color-medium-orange;
+  }
+}
